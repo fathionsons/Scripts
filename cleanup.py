@@ -1,4 +1,3 @@
-# Script to delete temp and prefetch files
 import os
 import shutil
 import stat
@@ -63,6 +62,8 @@ def force_delete(file_path):
             os.unlink(file_path)
             print(f"Force deleted file: {file_path}")
         elif os.path.isdir(file_path):
+            # Remove hidden and system attributes from the directory
+            ctypes.windll.kernel32.SetFileAttributesW(file_path, 0x80)  # FILE_ATTRIBUTE_NORMAL
             shutil.rmtree(file_path, ignore_errors=True)
             print(f"Force deleted directory: {file_path}")
     except Exception as e:
