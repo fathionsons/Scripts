@@ -99,4 +99,111 @@ Here is the list of 100 python automation Scripts:
 98-CompareCSVFiles.py
 99-RenameByMappingCSV.py
 100-FindLargeFilesByExtension.py
+Usage:
+| Script | Command |
+| --- | --- |
+| TempPrefetchCleaner.py | `python TempPrefetchCleaner.py` |
+| DirectorySizeReport.py | `python DirectorySizeReport.py --path . --top 10` |
+| TopLargestFiles.py | `python TopLargestFiles.py --path . --top 20` |
+| FileExtensionCounter.py | `python FileExtensionCounter.py --path .` |
+| MoveFilesByExtension.py | `python MoveFilesByExtension.py --path .` |
+| RenameExtensions.py | `python RenameExtensions.py --path . --old .txt --new .md` |
+| RemoveEmptyDirs.py | `python RemoveEmptyDirs.py --path .` |
+| ArchiveFolderToZip.py | `python ArchiveFolderToZip.py --source . --dest archive.zip` |
+| ExtractZipHere.py | `python ExtractZipHere.py --zip archive.zip --dest .` |
+| BackupDirectory.py | `python BackupDirectory.py --source . --dest backups` |
+| SyncDirectories.py | `python SyncDirectories.py --source . --dest backup --dry-run` |
+| OldFilesCleaner.py | `python OldFilesCleaner.py --path . --days 30` |
+| DuplicateFileFinder.py | `python DuplicateFileFinder.py --path .` |
+| HashFile.py | `python HashFile.py --path file.txt --algo sha256` |
+| VerifyFileHash.py | `python VerifyFileHash.py --path file.txt --expected <hash>` |
+| GeneratePassword.py | `python GeneratePassword.py --length 16 --count 3` |
+| Base64EncodeFile.py | `python Base64EncodeFile.py --input file.bin --output file.b64` |
+| Base64DecodeFile.py | `python Base64DecodeFile.py --input file.b64 --output file.bin` |
+| TextFileMerger.py | `python TextFileMerger.py --path . --pattern *.txt --output merged.txt` |
+| SearchInFiles.py | `python SearchInFiles.py --path . --pattern *.txt --text hello` |
+| ReplaceInFiles.py | `python ReplaceInFiles.py --path . --pattern *.txt --old foo --new bar` |
+| CountLines.py | `python CountLines.py --path . --pattern *.txt` |
+| ExtractEmails.py | `python ExtractEmails.py --path . --pattern *.txt --output emails.txt` |
+| CSVtoJSON.py | `python CSVtoJSON.py --input data.csv --output data.json` |
+| JSONtoCSV.py | `python JSONtoCSV.py --input data.json --output data.csv` |
+| CSVSummary.py | `python CSVSummary.py --input data.csv` |
+| SplitCSV.py | `python SplitCSV.py --input data.csv --rows 1000 --output-dir splits` |
+| JSONPrettyPrint.py | `python JSONPrettyPrint.py --input data.json --output pretty.json` |
+| ValidateJSON.py | `python ValidateJSON.py --input data.json` |
+| HTTPStatusCheck.py | `python HTTPStatusCheck.py https://example.com` |
+| DownloadFile.py | `python DownloadFile.py --url https://example.com/file.txt --output file.txt` |
+| PingHosts.py | `python PingHosts.py 8.8.8.8` |
+| CheckPort.py | `python CheckPort.py --host localhost --port 80` |
+| ResolveDNS.py | `python ResolveDNS.py --host example.com` |
+| PublicIP.py | `python PublicIP.py` |
+| LocalIP.py | `python LocalIP.py` |
+| DiskUsageReport.py | `python DiskUsageReport.py --path .` |
+| SystemInfo.py | `python SystemInfo.py` |
+| EnvironmentDump.py | `python EnvironmentDump.py --output env.txt` |
+| ListProcesses.py | `python ListProcesses.py` |
+| ProcessInfo.py | `python ProcessInfo.py --name python.exe` |
+| OpenURLInBrowser.py | `python OpenURLInBrowser.py --url https://example.com` |
+| CreateTimestampedFolder.py | `python CreateTimestampedFolder.py --base . --prefix run` |
+| RenameFilesWithTimestamp.py | `python RenameFilesWithTimestamp.py --path . --pattern *` |
+| GenerateFileTree.py | `python GenerateFileTree.py --path . --output tree.txt` |
+| CompareTwoFiles.py | `python CompareTwoFiles.py --left a.txt --right b.txt` |
+| CompareTwoFolders.py | `python CompareTwoFolders.py --left A --right B` |
+| ConvertNewlines.py | `python ConvertNewlines.py --path . --pattern *.txt --style lf` |
+| TrimWhitespace.py | `python TrimWhitespace.py --path . --pattern *.txt` |
+| RemoveDuplicateLines.py | `python RemoveDuplicateLines.py --input in.txt --output out.txt` |
+| SortLines.py | `python SortLines.py --input in.txt --output out.txt --unique` |
+| UniqueWordsCounter.py | `python UniqueWordsCounter.py --input in.txt` |
+| LogRotate.py | `python LogRotate.py --path app.log --keep 5` |
+| AppendDateToFilenames.py | `python AppendDateToFilenames.py --path .` |
+| RemoveDateFromFilenames.py | `python RemoveDateFromFilenames.py --path .` |
+| CreateDailyNotes.py | `python CreateDailyNotes.py --dir notes` |
+| CreateProjectScaffold.py | `python CreateProjectScaffold.py --path MyProject` |
+| ClipboardSaveText.py | `python ClipboardSaveText.py --output clip.txt` |
+| ClipboardLoadText.py | `python ClipboardLoadText.py --input clip.txt` |
+| RandomQuotePicker.py | `python RandomQuotePicker.py --input quotes.txt` |
+| URLListChecker.py | `python URLListChecker.py --file urls.txt` |
+| GenerateUUIDs.py | `python GenerateUUIDs.py --count 5` |
+| GenerateRandomDataCSV.py | `python GenerateRandomDataCSV.py --output sample.csv --rows 100` |
+| CSVColumnExtractor.py | `python CSVColumnExtractor.py --input data.csv --columns name,age --output subset.csv` |
+| CSVColumnRenamer.py | `python CSVColumnRenamer.py --input data.csv --mapping old:new --output renamed.csv` |
+| CSVFilterRows.py | `python CSVFilterRows.py --input data.csv --column status --contains active --output filtered.csv` |
+| CSVJoin.py | `python CSVJoin.py --left a.csv --right b.csv --key id --output joined.csv` |
+| JSONMerge.py | `python JSONMerge.py --left a.json --right b.json --output merged.json` |
+| JSONKeyFinder.py | `python JSONKeyFinder.py --input data.json --key id` |
+| CreateChecksumManifest.py | `python CreateChecksumManifest.py --path . --output checksums.sha256` |
+| VerifyChecksumManifest.py | `python VerifyChecksumManifest.py --manifest checksums.sha256 --base .` |
+| RenameByRegex.py | `python RenameByRegex.py --path . --pattern * --regex ^old --replace new` |
+| ChangeFilePermissions.py | `python ChangeFilePermissions.py --path . --mode readonly` |
+| FileCopyWithProgress.py | `python FileCopyWithProgress.py --source a.bin --dest b.bin` |
+| FileMoveWithBackup.py | `python FileMoveWithBackup.py --source a.txt --dest b.txt` |
+| ListInstalledPythonPackages.py | `python ListInstalledPythonPackages.py` |
+| DetectLargeFolders.py | `python DetectLargeFolders.py --path . --top 10` |
+| DirectoryWatcher.py | `python DirectoryWatcher.py --path . --interval 5` |
+| HTTPServerHere.py | `python HTTPServerHere.py --port 8000` |
+| SimpleScheduler.py | `python SimpleScheduler.py --time 23:00 --command "echo hello"` |
+| CountdownTimer.py | `python CountdownTimer.py --seconds 10` |
+| Stopwatch.py | `python Stopwatch.py` |
+| GenerateReportHTML.py | `python GenerateReportHTML.py --input report.txt --output report.html` |
+| BackupToZipDaily.py | `python BackupToZipDaily.py --source . --dest backups` |
+| ExtractArchiveBatch.py | `python ExtractArchiveBatch.py --path .` |
+| CheckPathLength.py | `python CheckPathLength.py --path . --length 240` |
+| DetectNonASCII.py | `python DetectNonASCII.py --path . --pattern *.txt` |
+| ConvertTabsToSpaces.py | `python ConvertTabsToSpaces.py --input in.txt --output out.txt --spaces 4` |
+| ConvertSpacesToTabs.py | `python ConvertSpacesToTabs.py --input in.txt --output out.txt --spaces 4` |
+| NumberFilesSequentially.py | `python NumberFilesSequentially.py --path .` |
+| UndoNumberingFromPrefix.py | `python UndoNumberingFromPrefix.py --path .` |
+| CreateEnvFileTemplate.py | `python CreateEnvFileTemplate.py --output .env --keys API_KEY,DB_URL` |
+| ValidateEnvFile.py | `python ValidateEnvFile.py --env .env --keys API_KEY,DB_URL` |
+| ListListeningPorts.py | `python ListListeningPorts.py` |
+| DownloadWebPageTitle.py | `python DownloadWebPageTitle.py --url https://example.com` |
+| GenerateSitemapFromFolder.py | `python GenerateSitemapFromFolder.py --path . --base-url https://example.com --output sitemap.xml` |
+| CreateMarkdownIndex.py | `python CreateMarkdownIndex.py --path . --output INDEX.md` |
+| CompareCSVFiles.py | `python CompareCSVFiles.py --left a.csv --right b.csv --key id` |
+| RenameByMappingCSV.py | `python RenameByMappingCSV.py --input mapping.csv --base .` |
+| FindLargeFilesByExtension.py | `python FindLargeFilesByExtension.py --path . --ext .log --min-size 1048576` |
+Build EXE:
+Run PowerShell in this folder:
+`./build_all.ps1`
+EXEs will be in `dist`.
 By Fathi
