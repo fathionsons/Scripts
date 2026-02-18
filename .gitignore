@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files
+.env
+.env.*
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+*.swp
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini

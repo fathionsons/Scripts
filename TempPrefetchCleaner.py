@@ -69,6 +69,14 @@ def force_delete(file_path):
     except Exception as e:
         print(f"Unable to force delete {file_path}: {e}")
 
+def pause_close():
+    if not sys.stdin or not sys.stdin.isatty():
+        return
+    try:
+        input("Work is done. Press Enter to close or continue.")
+    except EOFError:
+        pass
+
 if __name__ == "__main__":
     # Check for admin privileges
     if not is_admin():
@@ -81,3 +89,4 @@ if __name__ == "__main__":
     delete_temp_files()
     delete_prefetch_files()
     print("Cleanup complete!")
+    pause_close()
